@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+/* brand color palette */
+:root {
+  --primary: rgb(39, 37, 39);
+  --secondary: rgba(232, 102, 236, 1);
+  --white: rgb(255, 255, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* sets the main font style and color for the page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Candara", "Calibri", "Segoe", "Segoe UI", "Optima", Arial,
+    sans-serif;
+  color: var(--white);
+  background-color: var(--white);
+  line-height: 1.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Base properties for all the headers and paragraphs*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Naviagtion bar set to sit on the top left of the page*/
+nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--primary);
+}
+
+nav a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--secondary);
+  margin-right: 10px;
+  transition: all 0.25s ease-in;
+  font-size: 1.4rem;
+}
+
+/* Font changes color when cursor hovers over it to show selection is possible*/
+nav a:hover {
+  background-size: 100% 100%;
+  color: var(--light);
+}
+
+#contact {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  color: var(--secondary);
+  margin-top: 5rem;
+  transition: all 0.25s ease-in;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 4rem;
+  color: var(--secondary);
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+hr {
+  height: 20px;
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  display: block;
+  justify-content: center;
+  margin: auto;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.page-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bio {
+  display: flex;
+  align-items: center;
+  padding: 8rem 3rem 3rem 0;
+}
+
+#about-me {
+  position: relative;
+  align-items: center;
+  left: 0;
+  font-size: 1.3rem;
+  text-align: right;
+  margin: 0;
+  padding-top: -5rem;
+}
+
+#text-background {
+  padding: 10% 30% 10% 10%;
+  background-color: var(--primary);
+  z-index: -1;
+  height: 100%;
+  width: 80vw;
+}
+
+#text-wrapper {
+  vertical-align: middle;
+  padding: 5%;
+}
+
+#my-image {
+  position: relative;
+  width: 30vw;
+  border-radius: 50%;
+  z-index: 9;
+}
+
+#my-work {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.work {
+  display: flex;
+  height: 25rem;
+  color: var(--secondary);
+  font-weight: bolder;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: multiply;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 1rem;
+  background-color: var(--primary);
 }
 
-.App-link {
-  color: #61dafb;
+.work:hover {
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#work-one {
+  background-image: url("../images/crypto-tracker.png");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#work-two {
+  background-image: url("../images/weather-dashboard.png");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#work-three {
+  background-image: url("../images/work-day-planner.png");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#footer-end {
+  text-align: center;
+  justify-content: center;
+  color: var(--secondary);
+  transition: all 0.25s ease-in;
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+#footer-end li a {
+  font-size: 1.5rem;
 }
