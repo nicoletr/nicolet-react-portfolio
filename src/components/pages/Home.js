@@ -1,5 +1,6 @@
 import React from "react";
 import "../../App.css";
+import Me from "../../assets/images/me.jpg";
 
 function Home() {
   return (
@@ -19,11 +20,7 @@ function Home() {
           </div>
         </div>
         <div className="col col-sm-4 col-md-4 col-lg-4">
-          <img
-            id="my-image"
-            src="assets/images/me.jpg"
-            alt="i should be here..."
-          />
+          <img id="my-image" src={Me} alt="i should be here..." />
         </div>
       </section>
       {/* portfolio container */}

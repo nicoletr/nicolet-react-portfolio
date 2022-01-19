@@ -51,6 +51,10 @@ nav a:hover {
   color: var(--light);
 }
 
+img {
+  color: var(--white);
+}
+
 #contact {
   display: inline-flex;
   text-align: center;
@@ -116,6 +120,7 @@ hr {
 #text-wrapper {
   vertical-align: middle;
   padding: 5%;
+  color: var(--white);
 }
 
 #my-image {
@@ -157,21 +162,21 @@ hr {
 }
 
 #work-one {
-  background-image: url("../images/crypto-tracker.png");
+  background-image: url("assets/images/crypto-tracker.png");
   background-size: 100vh;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #work-two {
-  background-image: url("../images/weather-dashboard.png");
+  background-image: url("assets/images/weather-dashboard.png");
   background-size: 100vh;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #work-three {
-  background-image: url("../images/work-day-planner.png");
+  background-image: url("assets/images/work-day-planner.png");
   background-size: 100vh;
   background-repeat: no-repeat;
   background-position: center;
