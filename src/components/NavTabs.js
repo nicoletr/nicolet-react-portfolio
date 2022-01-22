@@ -1,5 +1,9 @@
 import React from "react";
 import "../styles/App.css";
+import "../assets/Nicole-Trpevski-WD-Resume.pdf";
+
+const resume =
+  "https://drive.google.com/file/d/1wpo6hknFxXFAW80C8WbyidjZjbvd7UEv/view?usp=sharing";
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
@@ -43,11 +47,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             </a>
           </li>
           <li className="nav-item">
-            <a
-              href="./assets/Nicole-Trpevski-WD-Resume.pdf"
-              download
-              target="_blank"
-            >
+            <a href={resume} target="_blank" rel="noreferrer">
               resume
             </a>
           </li>
