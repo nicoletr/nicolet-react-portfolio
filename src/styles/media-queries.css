@@ -1,0 +1,64 @@
+@media screen and (max-width: 1150px) {
+  .work {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #text-background {
+    padding: 5% 30% 5% 5%;
+  }
+  footer a {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .work {
+    height: 15rem;
+  }
+  footer a {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  #bio {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #my-image {
+    width: 65vw;
+  }
+
+  #about-me {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  #text-background {
+    padding: 0;
+    z-index: 0;
+  }
+
+  #my-work {
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+  }
+
+  .work {
+    width: 90%;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+
+  #footer-section {
+    padding: 1rem;
+  }
+}

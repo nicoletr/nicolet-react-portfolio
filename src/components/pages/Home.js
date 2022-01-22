@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/App.css";
+import "../../styles/media-queries.css";
 import Me from "../../assets/images/me.jpg";
 
 function Home() {

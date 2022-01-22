@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../../styles/App.css";
+import "../../styles/Contact.css";
+import "../../styles/media-queries.css";
 import { validateEmail } from "../../utils/helpers";
 
 function ContactForm() {
@@ -48,39 +49,53 @@ function ContactForm() {
   };
 
   return (
-    <div>
-      <p>Drop me a line</p>
-      <form className="form">
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="name"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="message"
-        />
-        <button type="button" onClick={handleFormSubmit}>
-          Send!
-        </button>
-      </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
+    <div className="contact-container">
+      <div className="opener">
+        <p>Drop me a line</p>
+      </div>
+      <div className="form-container">
+        <div className="form-row">
+          <form className="form">
+            <div className="form-row">
+              <input
+                className="form-input"
+                value={email}
+                name="email"
+                onChange={handleInputChange}
+                type="email"
+                placeholder="email"
+              />
+              <input
+                className="form-input"
+                value={name}
+                name="name"
+                onChange={handleInputChange}
+                type="text"
+                placeholder="name"
+              />
+            </div>
+            <div className="form-row">
+              <input
+                className="form-input"
+                id="message-input"
+                value={message}
+                name="message"
+                onChange={handleInputChange}
+                type="text"
+                placeholder="message"
+              />
+              <button type="submit" className="btn" onClick={handleFormSubmit}>
+                Send!
+              </button>
+            </div>
+          </form>
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 }
