@@ -70,16 +70,6 @@ img {
   color: var(--white);
 }
 
-#contact {
-  display: inline-flex;
-  text-align: center;
-  justify-content: center;
-  color: var(--secondary);
-  margin-top: 5rem;
-  transition: all 0.25s ease-in;
-  width: 100%;
-}
-
 footer a {
   text-decoration: none;
   font-size: 4rem;
@@ -88,6 +78,16 @@ footer a {
 
 footer a:hover {
   color: var(--primary);
+}
+
+#footer-contact {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  color: var(--secondary);
+  margin-top: 5rem;
+  transition: all 0.25s ease-in;
+  width: 100%;
 }
 
 hr {

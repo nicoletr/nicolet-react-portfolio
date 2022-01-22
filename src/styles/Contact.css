@@ -1,19 +1,33 @@
+/* brand color palette */
+:root {
+  --primary: rgb(39, 37, 39);
+  --secondary: rgba(232, 102, 236, 1);
+  --white: rgb(255, 255, 255);
+}
+
 .contact-container {
+  margin-top: 6rem;
   justify-content: center;
 }
 
-.opener {
-  margin-top: 6rem;
-  font-size: 1.5rem;
+label,
+.error-text {
+  color: var(--white);
+}
+
+.btn {
+  background-color: var(--secondary);
+}
+
+.custom-card {
+  background-color: var(--primary);
 }
 
 .form-container {
-  display: flex;
   justify-content: center;
 }
 
 .form-input {
-  display: "inline-block";
   padding: 0.5rem;
   margin: 0.5rem;
 }

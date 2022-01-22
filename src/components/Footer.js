@@ -12,7 +12,7 @@ const resume = <FontAwesomeIcon icon={faUserCircle} />;
 function Footer() {
   return (
     <footer>
-      <div id="contact">
+      <div id="footer-contact">
         <ul id="footer-section">
           <a
             className="fab fa-github"

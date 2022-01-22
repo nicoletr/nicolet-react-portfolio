@@ -33,9 +33,7 @@ function ContactForm() {
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email) || !name) {
-      setErrorMessage(
-        "Please fill out both name and email - I'd love to know who you are and how to contact you!"
-      );
+      setErrorMessage("Please fill out both name and email");
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
@@ -46,54 +44,88 @@ function ContactForm() {
     setName("");
     setEmail("");
     setMessage("");
+    setErrorMessage("");
   };
 
   return (
     <div className="contact-container">
-      <div className="opener">
-        <p>Drop me a line</p>
+      <div className=" text-center mt-5 ">
+        <h1>drop me a line...</h1>
       </div>
-      <div className="form-container">
-        <div className="form-row">
-          <form className="form">
-            <div className="form-row">
-              <input
-                className="form-input"
-                value={email}
-                name="email"
-                onChange={handleInputChange}
-                type="email"
-                placeholder="email"
-              />
-              <input
-                className="form-input"
-                value={name}
-                name="name"
-                onChange={handleInputChange}
-                type="text"
-                placeholder="name"
-              />
+      <div className="row">
+        <div className="col-lg-7 mx-auto">
+          <div className="card-body custom-card">
+            <div className="container">
+              <form id="contact-form">
+                <div className="controls">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label for="form_name">name</label>
+                        <input
+                          className="form-input"
+                          value={name}
+                          name="name"
+                          onChange={handleInputChange}
+                          type="text"
+                          placeholder="name"
+                          required="required"
+                          data-error="name is required."
+                        />
+                      </div>
+                      <div className="col-md-6">
+                        <div className="form-group">
+                          <label for="form_lastname">email</label>
+                          <input
+                            className="form-input"
+                            value={email}
+                            name="email"
+                            onChange={handleInputChange}
+                            type="email"
+                            placeholder="email"
+                            required="required"
+                            data-error="email is required."
+                          />
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-group">
+                            <label for="form_message">message</label>
+                            <textarea
+                              className="form-input"
+                              id="message-input"
+                              value={message}
+                              name="message"
+                              onChange={handleInputChange}
+                              type="text"
+                              placeholder="message"
+                              rows="4"
+                              required="required"
+                              data-error="Please, leave us a message."
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-12">
+                        <input
+                          type="submit"
+                          className="btn"
+                          value="Send!"
+                          onClick={handleFormSubmit}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              {errorMessage && (
+                <div>
+                  <p className="error-text">{errorMessage}</p>
+                </div>
+              )}
             </div>
-            <div className="form-row">
-              <input
-                className="form-input"
-                id="message-input"
-                value={message}
-                name="message"
-                onChange={handleInputChange}
-                type="text"
-                placeholder="message"
-              />
-              <button type="submit" className="btn" onClick={handleFormSubmit}>
-                Send!
-              </button>
-            </div>
-          </form>
-          {errorMessage && (
-            <div>
-              <p className="error-text">{errorMessage}</p>
-            </div>
-          )}
+          </div>
         </div>
       </div>
     </div>
