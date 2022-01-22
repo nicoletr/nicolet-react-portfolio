@@ -58,7 +58,6 @@ function Footer() {
           <li className="footer-text invisible">resume</li>
         </ul>
       </div>
-      <hr className="col-4" />
       <div>
         <ul id="footer-end">
           <li>
