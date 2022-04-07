@@ -53,13 +53,13 @@ function ContactForm() {
         <h1>drop me a line...</h1>
       </div>
       <div className="row">
-        <div className="col-lg-7 mx-auto">
+        <div className="col-10 col-lg-7 mx-auto">
           <div className="card-body custom-card">
             <div className="container">
               <form id="contact-form">
                 <div className="controls">
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-12">
                       <div className="form-group">
                         <label for="form_name">name</label>
                         <input
@@ -73,7 +73,7 @@ function ContactForm() {
                           data-error="name is required."
                         />
                       </div>
-                      <div className="col-md-6">
+                      <div className="col-12">
                         <div className="form-group">
                           <label for="form_lastname">email</label>
                           <input
@@ -89,7 +89,7 @@ function ContactForm() {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-12">
                           <div className="form-group">
                             <label for="form_message">message</label>
                             <textarea
@@ -107,10 +107,10 @@ function ContactForm() {
                           </div>
                         </div>
                       </div>
-                      <div className="col-md-12">
+                      <div className="col-12">
                         <input
                           type="submit"
-                          className="btn"
+                          className="btn custom-btn"
                           value="Send!"
                           onClick={handleFormSubmit}
                         />
