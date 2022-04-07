@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d58c897b.css",
-    "main.js": "/static/js/main.54680e54.js",
-    "static/media/me.jpg": "/static/media/me.b98967e152a12901fb33.jpg",
-    "static/media/crypto-tracker.png": "/static/media/crypto-tracker.b2ea1b0394f7011fba79.png",
-    "static/media/weather-dashboard.png": "/static/media/weather-dashboard.e2a3c7e50aedabc83c48.png",
-    "static/media/work-day-planner.png": "/static/media/work-day-planner.093fb9a211ff4b767bbb.png",
-    "index.html": "/index.html",
-    "main.d58c897b.css.map": "/static/css/main.d58c897b.css.map",
-    "main.54680e54.js.map": "/static/js/main.54680e54.js.map"
+    "main.css": "/nicolet-react-portfolio/static/css/main.5377655b.css",
+    "main.js": "/nicolet-react-portfolio/static/js/main.a5457f21.js",
+    "static/media/me.jpg": "/nicolet-react-portfolio/static/media/me.b98967e152a12901fb33.jpg",
+    "static/media/crypto-tracker.png": "/nicolet-react-portfolio/static/media/crypto-tracker.b2ea1b0394f7011fba79.png",
+    "static/media/weather-dashboard.png": "/nicolet-react-portfolio/static/media/weather-dashboard.e2a3c7e50aedabc83c48.png",
+    "static/media/work-day-planner.png": "/nicolet-react-portfolio/static/media/work-day-planner.093fb9a211ff4b767bbb.png",
+    "index.html": "/nicolet-react-portfolio/index.html",
+    "main.5377655b.css.map": "/nicolet-react-portfolio/static/css/main.5377655b.css.map",
+    "main.a5457f21.js.map": "/nicolet-react-portfolio/static/js/main.a5457f21.js.map"
   },
   "entrypoints": [
-    "static/css/main.d58c897b.css",
-    "static/js/main.54680e54.js"
+    "static/css/main.5377655b.css",
+    "static/js/main.a5457f21.js"
   ]
 }
